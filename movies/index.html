@@ -35,6 +35,16 @@
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
         referrerpolicy="strict-origin-when-cross-origin" 
         allowfullscreen></iframe>
+
+        <video width="640" height="360" controls loop muted poster="../movies/img/ilGattoConGliStivali.png" preload="metadata">
+            <source src=""><!--usabdo il tag surce ci permettere di inserire più indirizzi cosi puoi provare a caricare diverse sorgenti una surce dopo l'altra-->
+            <source src=""><!--se fallisce quello di prima allora provera a far partire queesto-->
+            <track kind="captions" src="sottotitoli.vtt" srclang="it" label="sottotitoli in italiano"></track>
+            il tuo browser non supporta il tag audio
+
+        </video><!--puoi fare la stessa cosa con in tag <audio> ma non puoi metttere il tag poster-->
+        <!--il preload ti fa fare un caricamento dei metadata del video del avvio della pagina non lo fa se fai preload="none"-->
+        <!--controls serve per attribuire i controlli <poster> mette una copertina <loop> che lo fa ripetere al infinito <muted> fa partire il video ma senza volume-->
     </body>
 
 </html>
